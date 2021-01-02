@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saw Franchise Survey Form</title>
+    <link rel="icon" href="./img/icon.jpg">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Saw Franchise Survey Form</h1>
+        <p class="description">"Most people are so ungrateful to be alive, but not you, not any more..."</p>
+        <p class="description" id="quote-author">- John Kramer, Saw (2004)</p>
+
+    </header>
+    <form id="survey-form" action="#">
+        <div id="form-div">
+            <label for="name" id="name-label" class='text-input-label'>Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name Here" required>
+            <label for="email" id="email-label" class='text-input-label'>Email</label>
+            <input type="email" id="email" class="form-control" name="email" placeholder="Enter Your Email Here"
+                required>
+            <label for="number" id="number-label" class='text-input-label'>Age</label>
+            <input type="number" id="number" class="form-control" name="number" placeholder="Enter Your Age Here"
+                min="16" max="100" required>
+            <div id="dropdown-div">
+                <label for="dropdown">Which "Saw" Movie is the Best ?</label>
+                <br>
+                <select id="dropdown" class="form-control">
+                    <option value="default">Saw</option>
+                    <option value="Saw I">Saw I</option>
+                    <option value="Saw II">Saw II</option>
+                    <option value="Saw III">Saw III</option>
+                    <option value="Saw IV">Saw IV</option>
+                    <option value="Saw V">Saw V</option>
+                    <option value="Saw VI">Saw VI</option>
+                    <option value="Saw 3D">Saw 3D</option>
+                    <option value="Jigsaw">Jigsaw</option>
+                </select>
+            </div>
+            <br>
+            <div id="radio-div">
+                <label>Choose Your Favorite Jigsaw Assistant</label>
+                <br>
+                <label class="radio-label"><input name="assistants" type="radio" value="Jill Tuck" id="jill-tuck">Jill
+                    Tuckz</label>
+                <br>
+                <label class="radio-label"><input name="assistants" type="radio" value="Mark Hoffman"
+                        id="mark-hoffman">Mark Hoffman</label>
+                <br>
+                <label class="radio-label"><input name="assistants" type="radio" value="Amanda Young"
+                        id="amanda-young">Amanda Young</label>
+                <br>
+                <label class="radio-label"><input name="assistants" type="radio" value="Lawrence Gordon"
+                        id="lawrence-gordon">Lawrence Gordon</label>
+                <br>
+                <label class="radio-label"><input name="assistants" type="radio" value="Logan Nelson"
+                        id="logan-nelson">Logan Nelson</label>
+                <br>
+            </div>
+            <div id="checkbox-div">
+                <label>Choose Your Favorite Jigsaw Trap(s)</label>
+                <br>
+                <label class="checkbox-label"><input name="traps" type="checkbox" value="Reverse Bear Trap">Reverse Bear
+                    Trap</label>
+                <br>
+                <label class="checkbox-label"><input name="traps" type="checkbox" value="Angel Trap">Angel Trap</label>
+                <br>
+                <label class="checkbox-label"><input name="traps" type="checkbox" value="Pound Of Flash Trap">Pound Of
+                    Flash Trap</label>
+                <br>
+                <label class="checkbox-label"><input name="traps" type="checkbox" value="Fish Hook Trap">Fish Hook
+                    Trap</label>
+                <br>
+                <label class="checkbox-label"><input name="traps" type="checkbox" value="Shotgun Carousel Trap">Shotgun
+                    Carousel Trap</label>
+                <br>
+            </div>
+            <textarea placeholder="Enter Your Comment Here (optional)"></textarea>
+            <br>
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

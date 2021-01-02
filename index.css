@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+body {
+  font-family: Poppins, Helvetica;
+  margin-left: 12%;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(./img/backgrund-img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#title {
+  font-size: 45px;
+  color: white;
+}
+
+.description {
+  margin-top: -15px;
+  font-size: 19px;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: white;
+}
+
+form {
+  background-color: rgba(20, 1, 1, 0.6);
+  color: white;
+  width: 530px;
+  text-align: left;
+  font-size: 25px;
+  border-radius: 20px;
+}
+
+#form-div {
+  width: 95%;
+  margin: auto;
+  padding-top: 1%;
+}
+
+.form-control {
+  width: 98%;
+  height: 35px;
+  border-radius: 8px;
+  margin: 12px 0px;
+  margin-bottom: 15px;
+  font-family: Poppins;
+}
+
+.form-control:focus,
+textarea:focus {
+  border-color: gray;
+  outline: 0;
+}
+
+.form-control:placeholder {
+  font-family: Poppins;
+  font-size: 25px;
+}
+
+#dropdown {
+  width: 99.5%;
+}
+
+#dropdown-div {
+  margin-top: 12px;
+  margin-bottom: -15px;
+}
+
+#radio-div,
+#checkbox-div {
+  margin-bottom: 20px;
+}
+
+.radio-label,
+.checkbox-label {
+  font-size: 20px;
+}
+
+textarea {
+  width: 98.2%;
+  height: 100px;
+  font-size: 18px;
+  font-family: Poppins;
+  resize: none;
+}
+
+#submit {
+  margin-top: 20px;
+  width: 99.2%;
+  height: 45px;
+  font-family: Poppins;
+  font-size: 17px;
+  background-color: rgba(119, 10, 10, 0.521);
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 3%;
+}
+
+#submit:hover {
+  animation: submitAnimation ease 1s;
+}
+@keyframes submitAnimation {
+  0% {
+    font-size: 17px;
+  }
+  50% {
+    font-size: 18px;
+  }
+  100% {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 780px) {
+  header {
+    text-align: center;
+    margin-right: 9.5%;
+  }
+  #title {
+    font-size: 8vmin;
+  }
+  .description {
+    font-size: 4vmin;
+  }
+  form {
+    width: 90%;
+    font-size: 4vmin;
+    text-align: left;
+  }
+  .radio-label,
+  .checkbox-label {
+    font-size: 3.5vmin;
+  }
+  textarea {
+    height: auto;
+  }
+}
+
+.description {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+#quote-author {
+  animation: fadeIn ease 3.5s;
+  -webkit-animation: fadeIn ease 3.5s;
+  -moz-animation: fadeIn ease 3.5s;
+  -o-animation: fadeIn ease 3.5s;
+  -ms-animation: fadeIn ease 3.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+input {
+  width: 15px;
+  height: 15px;
+}
